@@ -22,9 +22,12 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Almanaque da Lavoura — Calculadora de Colheitas",
+  title: "Calculadora Joja2",
   description:
     "Calculadora de plantio, colheita e lucro para Stardew Valley: descubra quando cada plantação fica pronta e quanto ela realmente rende.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

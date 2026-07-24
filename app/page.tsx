@@ -45,6 +45,9 @@ export default function HomePage({
           <CropCard key={crop.id} crop={crop} />
         ))}
       </div>
+       <p className="mt-4 text-parchment/60">
+          Criado por Ícaro Pinto Lira
+        </p>
     </main>
   );
 }
@@ -70,6 +73,7 @@ function FilterLink({
     >
       {children}
     </Link>
+    
   );
   
 }
