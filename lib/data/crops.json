@@ -1,0 +1,2482 @@
+{
+  "version": "1.6",
+  "_meta": {
+    "language": "pt-BR",
+    "sources": [
+      "Objects_pt-BR.yaml enviado pelo usuário (nomes e descrições oficiais em pt-BR)",
+      "Stardew Valley Wiki (stardewvalleywiki.com) - dias de crescimento, preços, sazonalidade, versão 1.6"
+    ],
+    "warnings": [
+      "Objects.xnb, Crops.xnb e FruitTrees.xnb sao binarios LZX-compressed e nao puderam ser descompactados neste ambiente (sem rede/ferramentas). Os dados numericos abaixo vieram da wiki oficial, nao diretamente dos .xnb do usuario.",
+      "Campos 'seed.id' / 'crop.id' com valor null sao itens onde o ID numerico interno (1.6 usa IDs de string qualificados, ex: '(O)258') nao pode ser confirmado com confianca. Use o comando SMAPI 'list_items' no jogo para confirmar IDs exatos se precisar deles.",
+      "Campo 'icon' e um caminho de exemplo (placeholder), pois nao foi possivel extrair os spritesheets reais dos .xnb.",
+      "calculator.profitPerDay usa a formula da wiki: ((maxHarvests * precoVenda) - precoSemente) / diasDeCultivo, sem fertilizante/profissoes.",
+      "Se seu save usa mods que alteram Objects/Crops/FruitTrees, os valores podem divergir dos aqui listados (vanilla 1.6)."
+    ]
+  },
+  "crops": [
+    {
+      "id": "parsnip",
+      "name": "Chirívia",
+      "englishName": "Parsnip",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": 472,
+        "price": 20,
+        "icon": "TileSheets/crops::seed_parsnip"
+      },
+      "crop": {
+        "id": 24,
+        "price": {
+          "normal": 35,
+          "silver": 44,
+          "gold": 52,
+          "iridium": 70
+        },
+        "category": "Vegetable",
+        "description": "Um tubérculo que nasce na primavera e é parente da cenoura. Possui um leve gosto de terra e é cheio de nutrientes.",
+        "energy": 25,
+        "health": 11
+      },
+      "growth": {
+        "days": 4,
+        "phases": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 3.75,
+        "roi": 0.75
+      }
+    },
+    {
+      "id": "green_bean",
+      "name": "Vagem",
+      "englishName": "Green Bean",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 60,
+        "icon": "TileSheets/crops::seed_green_bean"
+      },
+      "crop": {
+        "id": 188,
+        "price": {
+          "normal": 40,
+          "silver": 50,
+          "gold": 60,
+          "iridium": 80
+        },
+        "category": "Vegetable",
+        "description": "Uma pequena vagem suculenta e firme.",
+        "energy": 25,
+        "health": 11
+      },
+      "growth": {
+        "days": 10,
+        "phases": [
+          1,
+          1,
+          1,
+          3,
+          4
+        ],
+        "regrowth": 3,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": true,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 6,
+        "profitPerDay": 7.2,
+        "roi": 3.0
+      }
+    },
+    {
+      "id": "cauliflower",
+      "name": "Couve-flor",
+      "englishName": "Cauliflower",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 80,
+        "icon": "TileSheets/crops::seed_cauliflower"
+      },
+      "crop": {
+        "id": 190,
+        "price": {
+          "normal": 175,
+          "silver": 219,
+          "gold": 262,
+          "iridium": 350
+        },
+        "category": "Vegetable",
+        "description": "Valiosa, mas de crescimento lento. Apesar de sua cor, as folhas estão cheias de nutrientes.",
+        "energy": 75,
+        "health": 33
+      },
+      "growth": {
+        "days": 12,
+        "phases": [
+          1,
+          2,
+          4,
+          4,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": true,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 7.92,
+        "roi": 1.19
+      }
+    },
+    {
+      "id": "potato",
+      "name": "Batata",
+      "englishName": "Potato",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 50,
+        "icon": "TileSheets/crops::seed_potato"
+      },
+      "crop": {
+        "id": 192,
+        "price": {
+          "normal": 80,
+          "silver": 100,
+          "gold": 120,
+          "iridium": 160
+        },
+        "category": "Vegetable",
+        "description": "Um tubérculo muito cultivado.",
+        "energy": 25,
+        "health": 11
+      },
+      "growth": {
+        "days": 6,
+        "phases": [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 8.33,
+        "roi": 1.0
+      }
+    },
+    {
+      "id": "garlic",
+      "name": "Alho",
+      "englishName": "Garlic",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 40,
+        "icon": "TileSheets/crops::seed_garlic"
+      },
+      "crop": {
+        "id": 248,
+        "price": {
+          "normal": 60,
+          "silver": 75,
+          "gold": 90,
+          "iridium": 120
+        },
+        "category": "Vegetable",
+        "description": "Deixa os pratos ainda mais picantes. O alho de alta qualidade pode ser bem picante.",
+        "energy": 20,
+        "health": 9
+      },
+      "growth": {
+        "days": 4,
+        "phases": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 5.0,
+        "roi": 0.5
+      }
+    },
+    {
+      "id": "kale",
+      "name": "Couve",
+      "englishName": "Kale",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 70,
+        "icon": "TileSheets/crops::seed_kale"
+      },
+      "crop": {
+        "id": 250,
+        "price": {
+          "normal": 110,
+          "silver": 138,
+          "gold": 165,
+          "iridium": 220
+        },
+        "category": "Vegetable",
+        "description": "Estas folhas ligeiramente enceradas são ótimas em sopas e refogados.",
+        "energy": 50,
+        "health": 22
+      },
+      "growth": {
+        "days": 6,
+        "phases": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 6.67,
+        "roi": 0.57
+      }
+    },
+    {
+      "id": "rhubarb",
+      "name": "Ruibarbo",
+      "englishName": "Rhubarb",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 100,
+        "icon": "TileSheets/crops::seed_rhubarb"
+      },
+      "crop": {
+        "id": 252,
+        "price": {
+          "normal": 220,
+          "silver": 275,
+          "gold": 330,
+          "iridium": 440
+        },
+        "category": "Vegetable",
+        "description": "O caule é extremamente ácido, mas é uma ótima sobremesa quando adoçado.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 13,
+        "phases": [
+          2,
+          2,
+          2,
+          3,
+          4
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 9.23,
+        "roi": 1.2
+      }
+    },
+    {
+      "id": "strawberry",
+      "name": "Morango",
+      "englishName": "Strawberry",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 100,
+        "icon": "TileSheets/crops::seed_strawberry"
+      },
+      "crop": {
+        "id": 400,
+        "price": {
+          "normal": 120,
+          "silver": 150,
+          "gold": 180,
+          "iridium": 240
+        },
+        "category": "Fruit",
+        "description": "Uma fruta doce e suculenta com uma sedutora cor vermelha.",
+        "energy": 50,
+        "health": 22
+      },
+      "growth": {
+        "days": 8,
+        "phases": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "regrowth": 4,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 6,
+        "profitPerDay": 22.14,
+        "roi": 6.2
+      }
+    },
+    {
+      "id": "blue_jazz",
+      "name": "Jasmim-azul",
+      "englishName": "Blue Jazz",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 30,
+        "icon": "TileSheets/crops::seed_blue_jazz"
+      },
+      "crop": {
+        "id": 597,
+        "price": {
+          "normal": 50,
+          "silver": 62,
+          "gold": 75,
+          "iridium": 100
+        },
+        "category": "Flower",
+        "description": "Cresce em uma esfera para convidar o máximo de borboletas possível.",
+        "energy": 45,
+        "health": 20
+      },
+      "growth": {
+        "days": 7,
+        "phases": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 2.86,
+        "roi": 0.67
+      }
+    },
+    {
+      "id": "tulip",
+      "name": "Tulipa",
+      "englishName": "Tulip",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 20,
+        "icon": "TileSheets/crops::seed_tulip"
+      },
+      "crop": {
+        "id": 591,
+        "price": {
+          "normal": 30,
+          "silver": 38,
+          "gold": 45,
+          "iridium": 60
+        },
+        "category": "Flower",
+        "description": "A mais popular flor de primavera. Possui um cheiro bem delicado.",
+        "energy": 45,
+        "health": 20
+      },
+      "growth": {
+        "days": 6,
+        "phases": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 1.67,
+        "roi": 0.5
+      }
+    },
+    {
+      "id": "unmilled_rice",
+      "name": "Arroz não Moído",
+      "englishName": "Unmilled Rice",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 40,
+        "icon": "TileSheets/crops::seed_unmilled_rice"
+      },
+      "crop": {
+        "id": 271,
+        "price": {
+          "normal": 30,
+          "silver": 38,
+          "gold": 45,
+          "iridium": 60
+        },
+        "category": "Vegetable",
+        "description": "Arroz na sua forma mais crua. Coloque isso em um moinho para aumentar o seu valor.",
+        "energy": 3,
+        "health": 1
+      },
+      "growth": {
+        "days": 8,
+        "phases": [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": -1.25,
+        "roi": -0.25
+      }
+    },
+    {
+      "id": "coffee_bean",
+      "name": "Grão de Café",
+      "englishName": "Coffee Bean",
+      "season": [
+        "Spring",
+        "Summer"
+      ],
+      "seed": {
+        "id": 433,
+        "price": 2500,
+        "icon": "TileSheets/crops::seed_coffee_bean"
+      },
+      "crop": {
+        "id": null,
+        "price": {
+          "normal": 15,
+          "silver": 19,
+          "gold": 22,
+          "iridium": 30
+        },
+        "category": "Vegetable",
+        "description": "Plante na primavera ou no verão para produzir café. Coloque cinco grãos num barril para fazer café.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 10,
+        "phases": [
+          1,
+          2,
+          2,
+          3,
+          2
+        ],
+        "regrowth": 2,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 10,
+        "profitPerDay": -67.86,
+        "roi": -0.76
+      }
+    },
+    {
+      "id": "carrot",
+      "name": "Cenoura",
+      "englishName": "Carrot",
+      "season": [
+        "Spring"
+      ],
+      "seed": {
+        "id": null,
+        "price": 60,
+        "icon": "TileSheets/crops::seed_carrot"
+      },
+      "crop": {
+        "id": null,
+        "price": {
+          "normal": 35,
+          "silver": 44,
+          "gold": 52,
+          "iridium": 70
+        },
+        "category": "Vegetable",
+        "description": "Uma raíz colorida de crescimento rápido, ótima como aperitivo.",
+        "energy": 75,
+        "health": 33
+      },
+      "growth": {
+        "days": 3,
+        "phases": [
+          1,
+          1,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": -8.33,
+        "roi": -0.42
+      }
+    },
+    {
+      "id": "blueberry",
+      "name": "Mirtilo",
+      "englishName": "Blueberry",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": 481,
+        "price": 80,
+        "icon": "TileSheets/crops::seed_blueberry"
+      },
+      "crop": {
+        "id": 258,
+        "price": {
+          "normal": 50,
+          "silver": 62,
+          "gold": 75,
+          "iridium": 100
+        },
+        "category": "Fruit",
+        "description": "Uma fruta bastante popular e que faz muito bem para a saúde. Sua casca azul possui a mais alta concentração de nutrientes.",
+        "energy": 25,
+        "health": 11
+      },
+      "growth": {
+        "days": 13,
+        "phases": [
+          1,
+          3,
+          3,
+          3,
+          3
+        ],
+        "regrowth": 4,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 4,
+        "profitPerDay": 20.8,
+        "roi": 6.5
+      }
+    },
+    {
+      "id": "melon",
+      "name": "Melão",
+      "englishName": "Melon",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 80,
+        "icon": "TileSheets/crops::seed_melon"
+      },
+      "crop": {
+        "id": 254,
+        "price": {
+          "normal": 250,
+          "silver": 312,
+          "gold": 375,
+          "iridium": 500
+        },
+        "category": "Fruit",
+        "description": "Uma delícia doce e fresca de verão.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 12,
+        "phases": [
+          1,
+          2,
+          3,
+          3,
+          3
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": true,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 14.17,
+        "roi": 2.12
+      }
+    },
+    {
+      "id": "tomato",
+      "name": "Tomate",
+      "englishName": "Tomato",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 50,
+        "icon": "TileSheets/crops::seed_tomato"
+      },
+      "crop": {
+        "id": 256,
+        "price": {
+          "normal": 60,
+          "silver": 75,
+          "gold": 90,
+          "iridium": 120
+        },
+        "category": "Fruit",
+        "description": "Muito saboroso e ligeiramente picante, o Tomate possui uma variedade de utilizações culinárias.",
+        "energy": 20,
+        "health": 9
+      },
+      "growth": {
+        "days": 11,
+        "phases": [
+          2,
+          2,
+          2,
+          2,
+          3
+        ],
+        "regrowth": 4,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 5,
+        "profitPerDay": 9.26,
+        "roi": 5.0
+      }
+    },
+    {
+      "id": "hot_pepper",
+      "name": "Pimenta Picante",
+      "englishName": "Hot Pepper",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 20,
+        "icon": "TileSheets/crops::seed_hot_pepper"
+      },
+      "crop": {
+        "id": 260,
+        "price": {
+          "normal": 40,
+          "silver": 50,
+          "gold": 60,
+          "iridium": 80
+        },
+        "category": "Fruit",
+        "description": "Incrivelmente picante com um toque de doçura.",
+        "energy": 10,
+        "health": 4
+      },
+      "growth": {
+        "days": 5,
+        "phases": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "regrowth": 3,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 8,
+        "profitPerDay": 11.54,
+        "roi": 15.0
+      }
+    },
+    {
+      "id": "wheat",
+      "name": "Trigo",
+      "englishName": "Wheat",
+      "season": [
+        "Summer",
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 10,
+        "icon": "TileSheets/crops::seed_wheat"
+      },
+      "crop": {
+        "id": 262,
+        "price": {
+          "normal": 25,
+          "silver": 31,
+          "gold": 38,
+          "iridium": 50
+        },
+        "category": "Vegetable",
+        "description": "Um dos grãos mais cultivados. Dá uma boa farinha para pães e bolos.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 4,
+        "phases": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 3.75,
+        "roi": 1.5
+      }
+    },
+    {
+      "id": "radish",
+      "name": "Rabanete",
+      "englishName": "Radish",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 40,
+        "icon": "TileSheets/crops::seed_radish"
+      },
+      "crop": {
+        "id": 264,
+        "price": {
+          "normal": 90,
+          "silver": 112,
+          "gold": 135,
+          "iridium": 180
+        },
+        "category": "Vegetable",
+        "description": "Uma raiz crocante e refrescante, com traços apimentados quando comida crua.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 6,
+        "phases": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 8.33,
+        "roi": 1.25
+      }
+    },
+    {
+      "id": "red_cabbage",
+      "name": "Repolho Roxo",
+      "englishName": "Red Cabbage",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 100,
+        "icon": "TileSheets/crops::seed_red_cabbage"
+      },
+      "crop": {
+        "id": 266,
+        "price": {
+          "normal": 260,
+          "silver": 325,
+          "gold": 390,
+          "iridium": 520
+        },
+        "category": "Vegetable",
+        "description": "Geralmente utilizado em saladas. A cor pode variar de roxa até verde amarelado dependendo do fertilizante.",
+        "energy": 35,
+        "health": 15
+      },
+      "growth": {
+        "days": 9,
+        "phases": [
+          2,
+          2,
+          2,
+          1,
+          2
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 17.78,
+        "roi": 1.6
+      }
+    },
+    {
+      "id": "starfruit",
+      "name": "Carambola",
+      "englishName": "Starfruit",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 400,
+        "icon": "TileSheets/crops::seed_starfruit"
+      },
+      "crop": {
+        "id": 268,
+        "price": {
+          "normal": 750,
+          "silver": 938,
+          "gold": 1125,
+          "iridium": 1500
+        },
+        "category": "Fruit",
+        "description": "Uma fruta extremamente suculenta que cresce em temperatura quente e úmida. Ligeiramente doce com tons azedos.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 13,
+        "phases": [
+          2,
+          3,
+          2,
+          3,
+          3
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 26.92,
+        "roi": 0.88
+      }
+    },
+    {
+      "id": "corn",
+      "name": "Milho",
+      "englishName": "Corn",
+      "season": [
+        "Summer",
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 150,
+        "icon": "TileSheets/crops::seed_corn"
+      },
+      "crop": {
+        "id": 270,
+        "price": {
+          "normal": 50,
+          "silver": 62,
+          "gold": 75,
+          "iridium": 100
+        },
+        "category": "Vegetable",
+        "description": "Um dos grãos mais populares. Os grãos doces e frescos são uma delícia de verão.",
+        "energy": 17,
+        "health": 7
+      },
+      "growth": {
+        "days": 14,
+        "phases": [
+          2,
+          3,
+          3,
+          3,
+          3
+        ],
+        "regrowth": 4,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 10,
+        "profitPerDay": 7.0,
+        "roi": 2.33
+      }
+    },
+    {
+      "id": "summer_spangle",
+      "name": "Flor-Miçanga",
+      "englishName": "Summer Spangle",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 50,
+        "icon": "TileSheets/crops::seed_summer_spangle"
+      },
+      "crop": {
+        "id": 593,
+        "price": {
+          "normal": 90,
+          "silver": 112,
+          "gold": 135,
+          "iridium": 180
+        },
+        "category": "Flower",
+        "description": "Uma flor tropical que floresce no ar quente e úmido de verão. Possui um aroma doce e amargo.",
+        "energy": 45,
+        "health": 20
+      },
+      "growth": {
+        "days": 8,
+        "phases": [
+          1,
+          2,
+          2,
+          3
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 5.0,
+        "roi": 0.8
+      }
+    },
+    {
+      "id": "sunflower",
+      "name": "Girassol",
+      "englishName": "Sunflower",
+      "season": [
+        "Summer",
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 200,
+        "icon": "TileSheets/crops::seed_sunflower"
+      },
+      "crop": {
+        "id": 421,
+        "price": {
+          "normal": 80,
+          "silver": 100,
+          "gold": 120,
+          "iridium": 160
+        },
+        "category": "Flower",
+        "description": "Um erro muito comum é acreditar que a flor vira para onde o sol está.",
+        "energy": 30,
+        "health": 13
+      },
+      "growth": {
+        "days": 8,
+        "phases": [
+          1,
+          2,
+          2,
+          3
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": -15.0,
+        "roi": -0.6
+      }
+    },
+    {
+      "id": "poppy",
+      "name": "Papoula",
+      "englishName": "Poppy",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 100,
+        "icon": "TileSheets/crops::seed_poppy"
+      },
+      "crop": {
+        "id": 376,
+        "price": {
+          "normal": 140,
+          "silver": 175,
+          "gold": 210,
+          "iridium": 280
+        },
+        "category": "Flower",
+        "description": "Além de ser colorida, a papoula possui aplicações culinárias e medicinais.",
+        "energy": 30,
+        "health": 13
+      },
+      "growth": {
+        "days": 7,
+        "phases": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 5.71,
+        "roi": 0.4
+      }
+    },
+    {
+      "id": "summer_squash",
+      "name": "Abobrinha de Verão",
+      "englishName": "Summer Squash",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 25,
+        "icon": "TileSheets/crops::seed_summer_squash"
+      },
+      "crop": {
+        "id": null,
+        "price": {
+          "normal": 90,
+          "silver": 112,
+          "gold": 135,
+          "iridium": 180
+        },
+        "category": "Vegetable",
+        "description": "Uma abobrinha amarela e curvada, que é colhida enquanto ainda está imatura e macia.",
+        "energy": 50,
+        "health": 22
+      },
+      "growth": {
+        "days": 6,
+        "phases": [
+          1,
+          1,
+          1,
+          3
+        ],
+        "regrowth": 3,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 4,
+        "profitPerDay": 22.33,
+        "roi": 13.4
+      }
+    },
+    {
+      "id": "hops",
+      "name": "Lúpulo",
+      "englishName": "Hops",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": 60,
+        "icon": "TileSheets/crops::seed_hops"
+      },
+      "crop": {
+        "id": 304,
+        "price": {
+          "normal": 25,
+          "silver": 31,
+          "gold": 38,
+          "iridium": 50
+        },
+        "category": "Vegetable",
+        "description": "Uma flor amarga e azeda utilizada para dar sabor às cervejas.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 11,
+        "phases": [
+          1,
+          1,
+          2,
+          3,
+          4
+        ],
+        "regrowth": 1,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": true,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 18,
+        "profitPerDay": 13.93,
+        "roi": 6.5
+      }
+    },
+    {
+      "id": "eggplant",
+      "name": "Berinjela",
+      "englishName": "Eggplant",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 20,
+        "icon": "TileSheets/crops::seed_eggplant"
+      },
+      "crop": {
+        "id": 272,
+        "price": {
+          "normal": 60,
+          "silver": 75,
+          "gold": 90,
+          "iridium": 120
+        },
+        "category": "Vegetable",
+        "description": "Uma alternativa rica e saudável para o tomate. Deliciosa frita ou cozida.",
+        "energy": 30,
+        "health": 13
+      },
+      "growth": {
+        "days": 5,
+        "phases": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "regrowth": 5,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 5,
+        "profitPerDay": 11.2,
+        "roi": 14.0
+      }
+    },
+    {
+      "id": "pumpkin",
+      "name": "Abóbora",
+      "englishName": "Pumpkin",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 100,
+        "icon": "TileSheets/crops::seed_pumpkin"
+      },
+      "crop": {
+        "id": 276,
+        "price": {
+          "normal": 320,
+          "silver": 400,
+          "gold": 480,
+          "iridium": 640
+        },
+        "category": "Vegetable",
+        "description": "Uma delícia favorita do outono. Cultivada por suas sementes crocantes e polpa delicada e saborosa.",
+        "energy": 86,
+        "health": 38
+      },
+      "growth": {
+        "days": 13,
+        "phases": [
+          1,
+          2,
+          3,
+          3,
+          4
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": true,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 16.92,
+        "roi": 2.2
+      }
+    },
+    {
+      "id": "bok_choy",
+      "name": "Acelga Chinesa",
+      "englishName": "Bok Choy",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 50,
+        "icon": "TileSheets/crops::seed_bok_choy"
+      },
+      "crop": {
+        "id": 400,
+        "price": {
+          "normal": 80,
+          "silver": 100,
+          "gold": 120,
+          "iridium": 160
+        },
+        "category": "Vegetable",
+        "description": "As folhas verdes e caule fibroso são deliciosos e saudáveis.",
+        "energy": 25,
+        "health": 11
+      },
+      "growth": {
+        "days": 4,
+        "phases": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 7.5,
+        "roi": 0.6
+      }
+    },
+    {
+      "id": "yam",
+      "name": "Inhame",
+      "englishName": "Yam",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 60,
+        "icon": "TileSheets/crops::seed_yam"
+      },
+      "crop": {
+        "id": 404,
+        "price": {
+          "normal": 160,
+          "silver": 200,
+          "gold": 240,
+          "iridium": 320
+        },
+        "category": "Vegetable",
+        "description": "Um tubérculo rico em amido e altamente versátil.",
+        "energy": 50,
+        "health": 22
+      },
+      "growth": {
+        "days": 10,
+        "phases": [
+          1,
+          3,
+          3,
+          3
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 10.0,
+        "roi": 1.67
+      }
+    },
+    {
+      "id": "cranberries",
+      "name": "Oxicoco",
+      "englishName": "Cranberries",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 240,
+        "icon": "TileSheets/crops::seed_cranberries"
+      },
+      "crop": {
+        "id": 396,
+        "price": {
+          "normal": 75,
+          "silver": 94,
+          "gold": 112,
+          "iridium": 150
+        },
+        "category": "Fruit",
+        "description": "Estes frutos vermelhos e ácidos são uma comida tradicional de inverno.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 7,
+        "phases": [
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "regrowth": 5,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 5,
+        "profitPerDay": 18.89,
+        "roi": 2.12
+      }
+    },
+    {
+      "id": "beet",
+      "name": "Beterraba",
+      "englishName": "Beet",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 20,
+        "icon": "TileSheets/crops::seed_beet"
+      },
+      "crop": {
+        "id": 284,
+        "price": {
+          "normal": 100,
+          "silver": 125,
+          "gold": 150,
+          "iridium": 200
+        },
+        "category": "Vegetable",
+        "description": "Um legume doce e terroso. De quebra, as folhas dão uma ótima salada.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 6,
+        "phases": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 13.33,
+        "roi": 4.0
+      }
+    },
+    {
+      "id": "amaranth",
+      "name": "Amaranto",
+      "englishName": "Amaranth",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 70,
+        "icon": "TileSheets/crops::seed_amaranth"
+      },
+      "crop": {
+        "id": 300,
+        "price": {
+          "normal": 150,
+          "silver": 188,
+          "gold": 225,
+          "iridium": 300
+        },
+        "category": "Vegetable",
+        "description": "Um grão roxo cultivado por uma civilização antiga.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 7,
+        "phases": [
+          1,
+          1,
+          1,
+          1,
+          3
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 11.43,
+        "roi": 1.14
+      }
+    },
+    {
+      "id": "grape",
+      "name": "Uva",
+      "englishName": "Grape",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 60,
+        "icon": "TileSheets/crops::seed_grape"
+      },
+      "crop": {
+        "id": 398,
+        "price": {
+          "normal": 80,
+          "silver": 100,
+          "gold": 120,
+          "iridium": 160
+        },
+        "category": "Fruit",
+        "description": "Um doce cacho de uvas.",
+        "energy": 10,
+        "health": 4
+      },
+      "growth": {
+        "days": 10,
+        "phases": [
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "regrowth": 3,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": true,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 7,
+        "profitPerDay": 17.86,
+        "roi": 8.33
+      }
+    },
+    {
+      "id": "artichoke",
+      "name": "Alcachofra",
+      "englishName": "Artichoke",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 30,
+        "icon": "TileSheets/crops::seed_artichoke"
+      },
+      "crop": {
+        "id": 401,
+        "price": {
+          "normal": 160,
+          "silver": 200,
+          "gold": 240,
+          "iridium": 320
+        },
+        "category": "Vegetable",
+        "description": "O broto de um cardo. O exterior espinhoso esconde um interior suculento e recheado.",
+        "energy": 30,
+        "health": 13
+      },
+      "growth": {
+        "days": 8,
+        "phases": [
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 16.25,
+        "roi": 4.33
+      }
+    },
+    {
+      "id": "fairy_rose",
+      "name": "Rosa-de-fada",
+      "englishName": "Fairy Rose",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 100,
+        "icon": "TileSheets/crops::seed_fairy_rose"
+      },
+      "crop": {
+        "id": 595,
+        "price": {
+          "normal": 290,
+          "silver": 362,
+          "gold": 435,
+          "iridium": 580
+        },
+        "category": "Flower",
+        "description": "Uma lenda popular antiga sugere que o cheiro doce desta flor atrai fadas.",
+        "energy": 30,
+        "health": 13
+      },
+      "growth": {
+        "days": 12,
+        "phases": [
+          1,
+          4,
+          4,
+          3
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 15.83,
+        "roi": 1.9
+      }
+    },
+    {
+      "id": "broccoli",
+      "name": "Brócolis",
+      "englishName": "Broccoli",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 40,
+        "icon": "TileSheets/crops::seed_broccoli"
+      },
+      "crop": {
+        "id": null,
+        "price": {
+          "normal": 70,
+          "silver": 88,
+          "gold": 105,
+          "iridium": 140
+        },
+        "category": "Vegetable",
+        "description": "A cabeça inflorescente de uma planta de brócolis. A textura única vem de seus vários brotos pequenos.",
+        "energy": 25,
+        "health": 11
+      },
+      "growth": {
+        "days": 8,
+        "phases": [
+          1,
+          2,
+          2,
+          3
+        ],
+        "regrowth": 2,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 4,
+        "profitPerDay": 17.14,
+        "roi": 6.0
+      }
+    },
+    {
+      "id": "sweet_gem_berry",
+      "name": "Cereja de Joia Doce",
+      "englishName": "Sweet Gem Berry",
+      "season": [
+        "Fall"
+      ],
+      "seed": {
+        "id": null,
+        "price": 1000,
+        "icon": "TileSheets/crops::seed_sweet_gem_berry"
+      },
+      "crop": {
+        "id": 417,
+        "price": {
+          "normal": 3000,
+          "silver": 3750,
+          "gold": 4500,
+          "iridium": 6000
+        },
+        "category": "Fruit",
+        "description": "Tem o cheiro mais doce que você já sentiu.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 24,
+        "phases": [
+          1,
+          5,
+          5,
+          6,
+          7
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": false
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 83.33,
+        "roi": 2.0
+      }
+    },
+    {
+      "id": "powdermelon",
+      "name": "Melão-Poeiro",
+      "englishName": "Powdermelon",
+      "season": [
+        "Winter"
+      ],
+      "seed": {
+        "id": null,
+        "price": 100,
+        "icon": "TileSheets/crops::seed_powdermelon"
+      },
+      "crop": {
+        "id": null,
+        "price": {
+          "normal": 240,
+          "silver": 300,
+          "gold": 360,
+          "iridium": 480
+        },
+        "category": "Fruit",
+        "description": "Nomeado por conta da cobertura em forma de pó que forma em sua superfície. Este melão é firme e doce, com um sabor delicado.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 7,
+        "phases": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": true,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 20.0,
+        "roi": 1.4
+      }
+    },
+    {
+      "id": "ancient_fruit",
+      "name": "Fruta Antiga",
+      "englishName": "Ancient Fruit",
+      "season": [
+        "Spring",
+        "Summer",
+        "Fall"
+      ],
+      "seed": {
+        "id": 499,
+        "price": null,
+        "icon": "TileSheets/crops::seed_ancient_fruit"
+      },
+      "crop": {
+        "id": 454,
+        "price": {
+          "normal": 550,
+          "silver": 688,
+          "gold": 825,
+          "iridium": 1100
+        },
+        "category": "Fruit",
+        "description": "Está dormente há eras.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 28,
+        "phases": [
+          2,
+          7,
+          7,
+          7,
+          5
+        ],
+        "regrowth": 7,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": false
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 19.64,
+        "roi": null
+      }
+    },
+    {
+      "id": "tea_leaves",
+      "name": "Folhas de Chá",
+      "englishName": "Tea Leaves",
+      "season": [
+        "Spring",
+        "Summer",
+        "Fall"
+      ],
+      "seed": {
+        "id": 251,
+        "price": 500,
+        "icon": "TileSheets/crops::seed_tea_leaves"
+      },
+      "crop": {
+        "id": 815,
+        "price": {
+          "normal": 50,
+          "silver": 62,
+          "gold": 75,
+          "iridium": 100
+        },
+        "category": "Vegetable",
+        "description": "As jovens folhas de uma planta de chá. Podem ser usadas para fazer a bebida popular.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 20,
+        "phases": [
+          10,
+          5,
+          5
+        ],
+        "regrowth": 1,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": false
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": -22.5,
+        "roi": -0.9
+      }
+    },
+    {
+      "id": "cactus_fruit",
+      "name": "Fruto do Cacto",
+      "englishName": "Cactus Fruit",
+      "season": [
+        "Greenhouse"
+      ],
+      "seed": {
+        "id": null,
+        "price": 150,
+        "icon": "TileSheets/crops::seed_cactus_fruit"
+      },
+      "crop": {
+        "id": 90,
+        "price": {
+          "normal": 75,
+          "silver": 94,
+          "gold": 112,
+          "iridium": 150
+        },
+        "category": "Fruit",
+        "description": "O doce fruto da espinhosa pera do cacto.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 12,
+        "phases": [
+          1,
+          1,
+          4,
+          3,
+          3
+        ],
+        "regrowth": 3,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": false
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": -6.25,
+        "roi": -0.5
+      }
+    },
+    {
+      "id": "pineapple",
+      "name": "Abacaxi",
+      "englishName": "Pineapple",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": null,
+        "icon": "TileSheets/crops::seed_pineapple"
+      },
+      "crop": {
+        "id": 275,
+        "price": {
+          "normal": 300,
+          "silver": 375,
+          "gold": 450,
+          "iridium": 600
+        },
+        "category": "Fruit",
+        "description": "Uma fruta tropical doce e azeda.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 14,
+        "phases": [
+          1,
+          3,
+          3,
+          3,
+          4
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 21.43,
+        "roi": null
+      }
+    },
+    {
+      "id": "taro_root",
+      "name": "Inhame-coco",
+      "englishName": "Taro Root",
+      "season": [
+        "Summer"
+      ],
+      "seed": {
+        "id": null,
+        "price": null,
+        "icon": "TileSheets/crops::seed_taro_root"
+      },
+      "crop": {
+        "id": 432,
+        "price": {
+          "normal": 50,
+          "silver": 62,
+          "gold": 75,
+          "iridium": 100
+        },
+        "category": "Vegetable",
+        "description": "Esta raíz amilácea é um dos cultivos mais antigos.",
+        "energy": 30,
+        "health": 13
+      },
+      "growth": {
+        "days": 10,
+        "phases": [
+          1,
+          2,
+          2,
+          2,
+          3
+        ],
+        "regrowth": null,
+        "multiHarvest": false
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": false,
+        "seedMaker": true
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 5.0,
+        "roi": null
+      }
+    },
+    {
+      "id": "qi_bean",
+      "name": "Grão Qi",
+      "englishName": "Qi Bean",
+      "season": [
+        "Spring",
+        "Summer",
+        "Fall",
+        "Winter"
+      ],
+      "seed": {
+        "id": 890,
+        "price": null,
+        "icon": "TileSheets/crops::seed_qi_bean"
+      },
+      "crop": {
+        "id": 890,
+        "price": {
+          "normal": 1,
+          "silver": 1,
+          "gold": 2,
+          "iridium": 2
+        },
+        "category": "Vegetable",
+        "description": "Plante-os em qualquer estação. Regue todos os dias para produzir uma Fruta Qi. Demoram 4 dias para crescer.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "days": 4,
+        "phases": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "regrowth": 1,
+        "multiHarvest": true
+      },
+      "special": {
+        "trellis": false,
+        "giantCrop": true,
+        "seedMaker": false
+      },
+      "calculator": {
+        "maxHarvests": 1,
+        "profitPerDay": 0.25,
+        "roi": null
+      }
+    }
+  ],
+  "fruitTrees": [
+    {
+      "id": "cherry",
+      "name": "Cerejeira",
+      "englishName": "Cherry",
+      "season": [
+        "Spring"
+      ],
+      "sapling": {
+        "price": 687,
+        "icon": "TileSheets/crops::sapling_cherry"
+      },
+      "fruit": {
+        "price": {
+          "normal": 80,
+          "silver": 100,
+          "gold": 120,
+          "iridium": 160
+        },
+        "category": "Fruit",
+        "description": "É popular, e amadurece mais cedo que a maioria das frutas.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "daysToMature": 28,
+        "requiresEmptyTiles": 8,
+        "note": "Só cresce se 8 espaços adjacentes estiverem vazios (sem outras árvores/objetos)."
+      },
+      "special": {
+        "giantSize": true,
+        "yearsToMature": 1
+      }
+    },
+    {
+      "id": "apricot",
+      "name": "Damasqueiro",
+      "englishName": "Apricot",
+      "season": [
+        "Spring"
+      ],
+      "sapling": {
+        "price": 432,
+        "icon": "TileSheets/crops::sapling_apricot"
+      },
+      "fruit": {
+        "price": {
+          "normal": 50,
+          "silver": 62,
+          "gold": 75,
+          "iridium": 100
+        },
+        "category": "Fruit",
+        "description": "Uma frutinha macia com uma semente muito dura.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "daysToMature": 28,
+        "requiresEmptyTiles": 8,
+        "note": "Só cresce se 8 espaços adjacentes estiverem vazios (sem outras árvores/objetos)."
+      },
+      "special": {
+        "giantSize": true,
+        "yearsToMature": 1
+      }
+    },
+    {
+      "id": "orange",
+      "name": "Laranjeira",
+      "englishName": "Orange",
+      "season": [
+        "Summer"
+      ],
+      "sapling": {
+        "price": 865,
+        "icon": "TileSheets/crops::sapling_orange"
+      },
+      "fruit": {
+        "price": {
+          "normal": 100,
+          "silver": 125,
+          "gold": 150,
+          "iridium": 200
+        },
+        "category": "Fruit",
+        "description": "Suculenta, azedinha, e exalando um doce aroma de verão.",
+        "energy": 65,
+        "health": 29
+      },
+      "growth": {
+        "daysToMature": 28,
+        "requiresEmptyTiles": 8,
+        "note": "Só cresce se 8 espaços adjacentes estiverem vazios (sem outras árvores/objetos)."
+      },
+      "special": {
+        "giantSize": true,
+        "yearsToMature": 1
+      }
+    },
+    {
+      "id": "peach",
+      "name": "Pessegueiro",
+      "englishName": "Peach",
+      "season": [
+        "Summer"
+      ],
+      "sapling": {
+        "price": 1075,
+        "icon": "TileSheets/crops::sapling_peach"
+      },
+      "fruit": {
+        "price": {
+          "normal": 140,
+          "silver": 175,
+          "gold": 210,
+          "iridium": 280
+        },
+        "category": "Fruit",
+        "description": "Possui uma textura de veludo.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "daysToMature": 28,
+        "requiresEmptyTiles": 8,
+        "note": "Só cresce se 8 espaços adjacentes estiverem vazios (sem outras árvores/objetos)."
+      },
+      "special": {
+        "giantSize": true,
+        "yearsToMature": 1
+      }
+    },
+    {
+      "id": "apple",
+      "name": "Macieira",
+      "englishName": "Apple",
+      "season": [
+        "Fall"
+      ],
+      "sapling": {
+        "price": 432,
+        "icon": "TileSheets/crops::sapling_apple"
+      },
+      "fruit": {
+        "price": {
+          "normal": 100,
+          "silver": 125,
+          "gold": 150,
+          "iridium": 200
+        },
+        "category": "Fruit",
+        "description": "Fruta crocante utilizada para suco e sidra.",
+        "energy": 30,
+        "health": 13
+      },
+      "growth": {
+        "daysToMature": 28,
+        "requiresEmptyTiles": 8,
+        "note": "Só cresce se 8 espaços adjacentes estiverem vazios (sem outras árvores/objetos)."
+      },
+      "special": {
+        "giantSize": true,
+        "yearsToMature": 1
+      }
+    },
+    {
+      "id": "pomegranate",
+      "name": "Romanzeira",
+      "englishName": "Pomegranate",
+      "season": [
+        "Fall"
+      ],
+      "sapling": {
+        "price": 865,
+        "icon": "TileSheets/crops::sapling_pomegranate"
+      },
+      "fruit": {
+        "price": {
+          "normal": 140,
+          "silver": 175,
+          "gold": 210,
+          "iridium": 280
+        },
+        "category": "Fruit",
+        "description": "Dentro do fruto há grupos de sementes suculentas.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "daysToMature": 28,
+        "requiresEmptyTiles": 8,
+        "note": "Só cresce se 8 espaços adjacentes estiverem vazios (sem outras árvores/objetos)."
+      },
+      "special": {
+        "giantSize": true,
+        "yearsToMature": 1
+      }
+    },
+    {
+      "id": "banana",
+      "name": "Bananeira",
+      "englishName": "Banana",
+      "season": [
+        "Summer"
+      ],
+      "sapling": {
+        "price": 865,
+        "icon": "TileSheets/crops::sapling_banana"
+      },
+      "fruit": {
+        "price": {
+          "normal": 150,
+          "silver": 188,
+          "gold": 225,
+          "iridium": 300
+        },
+        "category": "Fruit",
+        "description": "Uma doce fruta tropical.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "daysToMature": 28,
+        "requiresEmptyTiles": 8,
+        "note": "Só cresce se 8 espaços adjacentes estiverem vazios (sem outras árvores/objetos)."
+      },
+      "special": {
+        "giantSize": true,
+        "yearsToMature": 1
+      }
+    },
+    {
+      "id": "mango",
+      "name": "Mangueira",
+      "englishName": "Mango",
+      "season": [
+        "Summer"
+      ],
+      "sapling": {
+        "price": 865,
+        "icon": "TileSheets/crops::sapling_mango"
+      },
+      "fruit": {
+        "price": {
+          "normal": 130,
+          "silver": 162,
+          "gold": 195,
+          "iridium": 260
+        },
+        "category": "Fruit",
+        "description": "Uma fruta tropical grande, doce e com um sabor único.",
+        "energy": 0,
+        "health": 0
+      },
+      "growth": {
+        "daysToMature": 28,
+        "requiresEmptyTiles": 8,
+        "note": "Só cresce se 8 espaços adjacentes estiverem vazios (sem outras árvores/objetos)."
+      },
+      "special": {
+        "giantSize": true,
+        "yearsToMature": 1
+      }
+    }
+  ]
+}
